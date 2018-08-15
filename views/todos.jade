@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  ul
+    each val in todos
+      li
+        input(type='checkbox')
+        span= val
